@@ -5,10 +5,16 @@ import {
   Typography,
 } from '@/components';
 
+import styles from './how-we-work.module.css';
+
 const HowWeWork = () => {
   return (
     <div className={cx('px-52')}>
-      <div className={cx('flex items-center')}>
+      <div className={cx('flex items-center relative')}>
+        {/* Glassmorphism effect */}
+        <div className={cx('glass-effect', styles['glass-effect-secondary01'])}></div>
+        <div className={cx('glass-effect', styles['glass-effect-secondary02'])}></div>
+
         <div className={cx('w-1/2 h-[525px] relative')}>
           <Image
             fill

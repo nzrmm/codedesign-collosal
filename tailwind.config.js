@@ -3,9 +3,6 @@ const {fontFamily} = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
@@ -17,11 +14,9 @@ module.exports = {
         primary01: '#0B0B22',
         primary02: '#6016FC',
         primary03: '#16FCD2',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        secondary01: '#FCA016',
+        secondary02: '#16FCD2',
+        secondary03: '#FC165B',
       },
     },
   },

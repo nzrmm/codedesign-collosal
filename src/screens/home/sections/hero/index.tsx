@@ -5,9 +5,16 @@ import {
   Typography,
 } from '@/components';
 
+import styles from './hero.module.css';
+
 const Hero = () => {
   return (
-    <div className={cx('px-52 pt-20 mb-24')}>
+    <div className={cx('px-52 pt-20 mb-24 relative')}>
+      {/* Glassmorphism effect */}
+      <div className={cx('glass-effect', styles['glass-effect-secondary01'])}></div>
+      <div className={cx('glass-effect', styles['glass-effect-secondary02'])}></div>
+      <div className={cx('glass-effect', styles['glass-effect-secondary03'])}></div>
+
       <div className={cx('flex flex-col items-center')}>
         <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-3'>
           CLIENT-DEVELOPMENT DRIVEN

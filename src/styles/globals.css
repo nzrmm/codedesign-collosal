@@ -6,6 +6,20 @@
 
 @layer base {
   html, body {
-    @apply h-full
+    @apply overflow-x-hidden;
+  }
+
+  body {
+    @apply bg-primary01 text-white;
+  }
+
+  div#__next {
+    @apply bg-primary01/90;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply absolute rounded-full filter blur-3xl;
   }
 }
