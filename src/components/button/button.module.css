@@ -1,0 +1,7 @@
+.variant__small {
+  @apply rounded-[4px] px-[30px] py-[10px] text-sm font-medium
+}
+
+.type__secondary {
+  @apply bg-white/10 text-white
+}
