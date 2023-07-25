@@ -31,7 +31,7 @@ const Feature = () => {
   ])
   
   return (
-    <div className={cx('px-52')}>
+    <div className={cx('px-52 mb-14')}>
       <div className={cx('grid grid-cols-3 gap-5')}>
         {features.map((feature, index) => {
           return (

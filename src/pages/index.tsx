@@ -1,6 +1,7 @@
 import {
   Hero,
   Feature,
+  SupportedBy,
 } from "@/screens/home"
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Hero />
       <Feature />
+      <SupportedBy />
     </div>
   )
 }
