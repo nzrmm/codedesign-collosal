@@ -6,6 +6,10 @@
   @apply text-lg font-bold leading-normal text-white;
 }
 
+.variant__text3Xl {
+  @apply text-3xl font-bold leading-normal text-white;
+}
+
 .variant__text4Xl {
   @apply text-4xl font-bold leading-normal text-white;
 }
