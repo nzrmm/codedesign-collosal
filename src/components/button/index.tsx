@@ -6,7 +6,7 @@ type IButton = {
   id: string,
   children: React.ReactNode,
   type: 'primary' | 'secondary',
-  variant: 'small' | 'large',
+  variant: 'small' | 'medium' | 'large',
   customClassName?: string,
   onClick: () => void,
 }

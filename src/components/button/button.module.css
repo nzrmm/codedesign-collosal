@@ -2,6 +2,14 @@
   @apply rounded-[4px] px-[30px] py-[10px] text-sm font-medium
 }
 
+.variant__medium {
+  @apply rounded-[4px] px-[55px] py-[15px] text-base font-semibold
+}
+
+.type__primary {
+  @apply bg-primary02 text-white
+}
+
 .type__secondary {
   @apply bg-white/10 text-white
 }
