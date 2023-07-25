@@ -13,6 +13,9 @@ module.exports = {
       sans: ['Noto Sans', ...fontFamily.sans],
     },
     extend: {
+      colors: {
+        primary01: '#0B0B22',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
