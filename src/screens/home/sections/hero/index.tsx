@@ -7,7 +7,7 @@ import {
 
 const Hero = () => {
   return (
-    <div className={cx('px-52 py-20')}>
+    <div className={cx('px-52 pt-20 mb-24')}>
       <div className={cx('flex flex-col items-center')}>
         <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-3'>
           CLIENT-DEVELOPMENT DRIVEN
