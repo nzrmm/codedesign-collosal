@@ -9,13 +9,13 @@ import styles from './how-we-work.module.css';
 
 const HowWeWork = () => {
   return (
-    <div className={cx('px-52')}>
+    <div className={cx('px-52 mb-32')}>
       <div className={cx('flex items-center relative')}>
         {/* Glassmorphism effect */}
         <div className={cx('glass-effect', styles['glass-effect-secondary01'])}></div>
         <div className={cx('glass-effect', styles['glass-effect-secondary02'])}></div>
 
-        <div className={cx('w-1/2 h-[525px] relative')}>
+        <div className={cx('w-[600px] h-[525px] relative')}>
           <Image
             fill
             src={'/images/how-we-work.png'}
@@ -23,7 +23,7 @@ const HowWeWork = () => {
           />
         </div>
 
-        <div className={cx('w-1/2')}>
+        <div className={cx('flex-1 -ml-14')}>
           <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-1'>
             HOW WE WORK?
           </Typography>

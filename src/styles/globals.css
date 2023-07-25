@@ -9,12 +9,12 @@
     @apply overflow-x-hidden;
   }
 
-  body {
-    @apply bg-primary01 text-white;
+  html {
+    @apply bg-primary01;
   }
 
-  div#__next {
-    @apply bg-primary01/90;
+  body {
+    @apply bg-primary01/90 text-white;
   }
 }
 

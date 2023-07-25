@@ -12,7 +12,7 @@ const SupportedBy = () => {
   ])
 
   return (
-    <div className={cx('px-52 mb-32')}>
+    <div className={cx('px-52 mb-28')}>
       <div className={cx('flex items-center justify-center gap-11 border-y border-white/10 py-8')}>
         {logos.map((logo, index) => {
           return (
