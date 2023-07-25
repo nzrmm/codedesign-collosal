@@ -1,0 +1,7 @@
+.variant__textBase {
+  @apply text-base font-medium leading-loose text-white/60;
+}
+
+.variant__text4Xl {
+  @apply text-4xl font-bold leading-normal text-white;
+}

@@ -14,7 +14,7 @@ const Header = () => {
   ])
   
   return (
-    <div className={cx('px-52 py-6')}>
+    <div className={cx('px-52 py-10')}>
       <div className={cx('flex items-center justify-between')}>
         {/* Logo */}
         <div className={cx('flex items-center gap-5')}>

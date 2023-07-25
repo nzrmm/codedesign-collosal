@@ -1,6 +1,10 @@
+import {Hero} from "@/screens/home"
+
 const Home = () => {
   return (
-    <div></div>
+    <div>
+      <Hero />
+    </div>
   )
 }
 
