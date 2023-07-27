@@ -5,6 +5,7 @@ import {
   HowWeWork,
   OurTeam,
   Projects,
+  GetStarted,
 } from "@/screens/home"
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <HowWeWork />
       <OurTeam />
       <Projects />
+      <GetStarted />
     </div>
   )
 }

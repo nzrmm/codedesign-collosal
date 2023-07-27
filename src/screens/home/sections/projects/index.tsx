@@ -15,7 +15,7 @@ const Projects = () => {
   ])
 
   return (
-    <div className={cx('px-52 relative')}>
+    <div className={cx('px-52 mb-28 relative')}>
       {/* Glassmorphism effect */}
       <div className={cx('circle-glass-effect', styles['circle-glass-effect-gradient01'])}></div>
       <div className={cx('circle-glass-effect', styles['circle-glass-effect-gradient02'])}></div>

@@ -5,7 +5,7 @@ import styles from './button.module.css';
 type IButton = {
   id: string,
   children: React.ReactNode,
-  type: 'primary' | 'secondary' | 'outline',
+  type: 'primary' | 'primary-white' | 'secondary' | 'outline',
   variant: 'small' | 'medium' | 'large',
   customClassName?: string,
   onClick: () => void,

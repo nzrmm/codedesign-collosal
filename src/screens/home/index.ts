@@ -4,6 +4,7 @@ import SupportedBy from '@/screens/home/sections/supported-by';
 import HowWeWork from '@/screens/home/sections/how-we-work';
 import OurTeam from '@/screens/home/sections/our-team';
 import Projects from '@/screens/home/sections/projects';
+import GetStarted from '@/screens/home/sections/get-started';
 
 export {
   Hero,
@@ -12,4 +13,5 @@ export {
   HowWeWork,
   OurTeam,
   Projects,
+  GetStarted,
 }
