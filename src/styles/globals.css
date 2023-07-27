@@ -22,4 +22,8 @@
   .glass-effect {
     @apply absolute rounded-full filter blur-3xl;
   }
+
+  .circle-glass-effect {
+    @apply absolute rounded-full filter blur-sm;
+  }
 }

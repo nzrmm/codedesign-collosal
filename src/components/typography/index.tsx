@@ -5,7 +5,7 @@ import styles from './typography.module.css'
 type ITypography = {
   children: React.ReactNode,
   customClassName?: string,
-  variant: 'textXs' | 'textSm' | 'textBase' | 'textLg' | 'text3Xl' | 'text4Xl'
+  variant: 'textXs' | 'textSm' | 'textBase' | 'textLg' | 'textXl' | 'text3Xl' | 'text4Xl'
 }
 
 const Typography = ({children, customClassName, variant}: ITypography) => {

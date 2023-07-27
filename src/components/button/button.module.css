@@ -13,3 +13,7 @@
 .type__secondary {
   @apply bg-white/10 text-white
 }
+
+.type__outline {
+  @apply bg-transparent border border-white text-white;
+}
