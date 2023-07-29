@@ -5,7 +5,7 @@ import {
   Typography
 } from '@/components';
 
-import {IFeature} from '@/types/home'
+import {IFeature} from '@/types'
 
 type ICardFeature = {
   data: IFeature,

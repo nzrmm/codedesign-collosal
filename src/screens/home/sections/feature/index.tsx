@@ -4,7 +4,7 @@ import {
   CardFeature,
 } from '@/components';
 
-import {features} from '@/data/home';
+import {features} from '@/data';
 
 const Feature = () => {  
   return (

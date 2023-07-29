@@ -8,7 +8,7 @@ import {
   Typography,
 } from '@/components'
 
-import {contacts} from '@/data/contact';
+import {contacts} from '@/data';
 
 const Hero = () => {
   return (

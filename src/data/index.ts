@@ -1,10 +1,46 @@
 import {
+  ILink,
+  IFooter,
+  IOption,
   IFeature,
-  ICompanyLogo,
   IProject,
   IService,
+  IContact,
+  ICompanyLogo,
   ITestimonial,
-} from '@/types/home'
+} from '@/types';
+
+export const links: ILink[] = [
+  {href: '/services', label: 'Services'},
+  {href: '/how-we-work', label: 'How We Work'},
+  {href: '/projects', label: 'Projects'},
+  {href: '/About', label: 'About'},
+]
+
+export const footer: IFooter = {
+  services: [
+    {label: 'Web Development', href: '/'},
+    {label: 'App Development', href: '/'},
+    {label: 'UI Design', href: '/'},
+    {label: 'Consultation', href: '/'},
+    {label: 'Maintenance', href: '/'},
+  ],
+  company: [
+    {label: 'About', href: '/'},
+    {label: 'Contact', href: '/'},
+    {label: 'Send Quote', href: '/'},
+    {label: 'Privacy Policy', href: '/'},
+    {label: 'Term of Service', href: '/'},
+    {label: 'Jobs', href: '/'},
+  ],
+  resources: [
+    {label: 'Support', href: '/'},
+    {label: 'Documentation', href: '/'},
+    {label: 'License', href: '/'},
+    {label: 'Sitemap', href: '/'},
+  ]
+}
+
 
 export const features: IFeature[] = [
   {
@@ -30,11 +66,6 @@ export const companyLogos: ICompanyLogo[] = [
   {src: '/images/google-logo.png', alt: 'google-logo'},
   {src: '/images/microsoft-logo.png', alt: 'microsoft-logo'},
   {src: '/images/facebook-logo.png', alt: 'facebook-logo'},
-];
-
-export const projects: IProject[] = [
-  {id: '1', title: 'The Mobile App Landing Page', description: 'A landing page for mobile app'},
-  {id: '2', title: 'The Desktop App Landing Page', description: 'A landing page for desktop app'},
 ];
 
 export const services: IService[] = [
@@ -81,3 +112,30 @@ export const testimonials: ITestimonial[] = [
     description: `"I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking. "`
   },
 ];
+
+export const categories: IOption[] = [
+  {label: 'Technology', value: 'technology'},
+  {label: 'Company', value: 'company'},
+  {label: 'Transportation', value: 'Transportation'},
+  {label: 'Binance', value: 'binance'},
+]
+
+export const projects: IProject[] = [
+  {id: '1', title: 'The Mobile App Landing Page', description: 'A landing page for mobile app'},
+  {id: '2', title: 'The Desktop App Landing Page', description: 'A landing page for desktop app'},
+  {id: '3', title: 'The Mobile App Landing Page', description: 'A landing page for mobile app'},
+  {id: '4', title: 'The Desktop App Landing Page', description: 'A landing page for desktop app'},
+];
+
+export const contacts: IContact[] = [
+  {
+    icon: '/svgs/phone.svg',
+    type: 'Phone',
+    value: '+62 1234 8921'
+  },
+  {
+    icon: '/svgs/mail.svg',
+    type: 'Email',
+    value: 'support@collosal.tld'
+  }
+]

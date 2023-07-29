@@ -5,7 +5,7 @@ import {
   Typography
 } from '@/components';
 
-import {ITestimonial} from '@/types/home'
+import {ITestimonial} from '@/types'
 
 type ICardTestimonial = {
   isActive?: boolean;

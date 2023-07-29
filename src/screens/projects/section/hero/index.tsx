@@ -5,7 +5,7 @@ import {
   Typography,
 } from '@/components';
 
-import {categories} from '@/data/projects'
+import {categories} from '@/data'
 
 const Hero = () => {
   return (

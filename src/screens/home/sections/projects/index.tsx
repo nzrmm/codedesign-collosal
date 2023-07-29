@@ -5,7 +5,7 @@ import {
   CardProject,
 } from '@/components';
 
-import {projects} from '@/data/home';
+import {projects} from '@/data';
 
 import styles from './projects.module.css';
 
@@ -30,7 +30,7 @@ const Projects = () => {
       </div>
 
       <div className={cx('grid grid-cols-2 gap-5')}>
-        {projects.map((project, index) => {
+        {projects.slice(0, 2).map((project, index) => {
           return (
             <CardProject
               key={index}

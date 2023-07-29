@@ -6,7 +6,7 @@ import {
   Typography,
 } from '@/components';
 
-import {IOption} from '@/types/type';
+import {IOption} from '@/types';
 
 type ISelectbox = {
   options: IOption[],

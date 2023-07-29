@@ -7,7 +7,7 @@ import {
   Typography,
 } from '@/components';
 
-import {footer} from '@/data/layout';
+import {footer} from '@/data';
 
 import styles from './footer.module.css';
 

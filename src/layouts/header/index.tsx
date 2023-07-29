@@ -7,7 +7,7 @@ import {
   Button,
 } from '@/components';
 
-import {links} from '@/data/layout';
+import {links} from '@/data';
 
 const Header = () => {
   const router = useRouter();

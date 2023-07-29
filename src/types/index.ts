@@ -1,3 +1,19 @@
+export type ILink = {
+  label: string,
+  href: string,
+}
+
+export type IFooter = {
+  services: ILink[],
+  company: ILink[],
+  resources: ILink[]
+}
+
+export type IOption = {
+  label: string,
+  value: string,
+}
+
 export type IFeature = {
   icon: string,
   title: string,
@@ -28,4 +44,10 @@ export type ITestimonial = {
   company: string,
   photo: string,
   description: string,
+}
+
+export type IContact = {
+  icon: string,
+  type: string,
+  value: string
 }

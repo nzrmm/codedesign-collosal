@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import Image from 'next/image';
 
-import {companyLogos} from '@/data/home'
+import {companyLogos} from '@/data'
 
 const SupportedBy = () => {
   return (

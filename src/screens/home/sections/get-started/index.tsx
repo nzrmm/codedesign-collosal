@@ -5,7 +5,7 @@ import {
   CardService,
 } from '@/components';
 
-import {services} from '@/data/home';
+import {services} from '@/data';
 
 const GetStarted = () => {
   return (

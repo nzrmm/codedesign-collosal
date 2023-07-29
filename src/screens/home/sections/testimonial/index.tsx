@@ -7,7 +7,7 @@ import {
   CardTestimonial,
 } from '@/components';
 
-import {testimonials} from '@/data/home';
+import {testimonials} from '@/data';
 
 import styles from './testimonial.module.css';
 

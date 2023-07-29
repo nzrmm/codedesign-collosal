@@ -5,7 +5,7 @@ import {
   Typography,
 } from '@/components';
 
-import {IService} from '@/types/home';
+import {IService} from '@/types';
 
 type ICardService = {
   data: IService,

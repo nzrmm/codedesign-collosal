@@ -11,9 +11,9 @@ import {
   CardProject,
 } from '@/components';
 
-import {projects} from '@/data/projects';
+import {projects} from '@/data';
 
-import {IProject} from '@/types/projects';
+import {IProject} from '@/types';
 
 const ProjectDetail = ({project}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
