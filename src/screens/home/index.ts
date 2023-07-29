@@ -5,6 +5,7 @@ import HowWeWork from '@/screens/home/sections/how-we-work';
 import OurTeam from '@/screens/home/sections/our-team';
 import Projects from '@/screens/home/sections/projects';
 import GetStarted from '@/screens/home/sections/get-started';
+import Testimonial from '@/screens/home/sections/testimonial';
 
 export {
   Hero,
@@ -14,4 +15,5 @@ export {
   OurTeam,
   Projects,
   GetStarted,
+  Testimonial,
 }

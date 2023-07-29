@@ -24,6 +24,7 @@ module.exports = {
         secondary04: '#FF81A6',
         secondary05: '#009C3E',
         secondary06: '#66FFA3',
+        secondary06: '#161629',
       },
     },
   },

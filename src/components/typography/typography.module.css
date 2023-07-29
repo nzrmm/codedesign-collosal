@@ -2,6 +2,10 @@
   @apply text-xs font-normal leading-normal text-white/60;
 }
 
+.variant__textSm {
+  @apply text-sm font-normal leading-normal text-white/60;
+}
+
 .variant__textBase {
   @apply text-base font-medium leading-loose text-white/60;
 }
