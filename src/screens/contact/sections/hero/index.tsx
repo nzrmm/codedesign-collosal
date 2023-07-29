@@ -10,15 +10,13 @@ import {
 
 import {contacts} from '@/data/contact';
 
-import styles from './hero.module.css';
-
 const Hero = () => {
   return (
     <div className={cx('px-52 pt-24 pb-32 relative')}>
       {/* Glassmorphism effect */}
-      <div className={cx('glass-effect', styles['glass-effect-secondary01'])}></div>
-      <div className={cx('glass-effect', styles['glass-effect-primary03'])}></div>
-      <div className={cx('glass-effect', styles['glass-effect-secondary03'])}></div>
+      <div className={cx('glass-effect glass-effect-secondary01')}></div>
+      <div className={cx('glass-effect glass-effect-primary03')}></div>
+      <div className={cx('glass-effect glass-effect-secondary03')}></div>
 
       <div className={cx('flex items-center justify-between')}>
         <div className={cx('flex-1')}>
