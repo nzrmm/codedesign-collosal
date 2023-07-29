@@ -27,8 +27,12 @@ export type ICompanyLogo = {
 
 export type IProject = {
   id: string,
+  slug: string,
   title: string,
   description: string,
+  category: string,
+  client: string,
+  technologies: string[],
 };
 
 export type IService = {

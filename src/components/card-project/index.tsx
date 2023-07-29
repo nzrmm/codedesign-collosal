@@ -34,7 +34,7 @@ const CardProject = ({data}: ICardProject) => {
           type='outline'
           variant='small'
           customClassName='!rounded-full'
-          onClick={() => router.push(`/projects/${data.id}`)}
+          onClick={() => router.push(`/projects/${data.slug}`)}
         >
           Detail
         </Button>

@@ -121,10 +121,42 @@ export const categories: IOption[] = [
 ]
 
 export const projects: IProject[] = [
-  {id: '1', title: 'The Mobile App Landing Page', description: 'A landing page for mobile app'},
-  {id: '2', title: 'The Desktop App Landing Page', description: 'A landing page for desktop app'},
-  {id: '3', title: 'The Mobile App Landing Page', description: 'A landing page for mobile app'},
-  {id: '4', title: 'The Desktop App Landing Page', description: 'A landing page for desktop app'},
+  {
+    id: '1',
+    slug: 'the-mobile-app-landing-page-01',
+    title: 'The Mobile App Landing Page 01',
+    description: 'A landing page for mobile app 01',
+    category: 'Development',
+    client: 'Acme, Inc',
+    technologies: ['Flutter', 'Bloc'],
+  },
+  {
+    id: '2',
+    slug: 'the-desktop-app-landing-page-02',
+    title: 'The Desktop App Landing Page 02',
+    description: 'A landing page for desktop app 02',
+    category: 'UI Design',
+    client: 'Inahs, Corp',
+    technologies: ['Figma', 'Sketch'],
+  },
+  {
+    id: '3',
+    slug: 'the-mobile-app-landing-page-03',
+    title: 'The Mobile App Landing Page 03',
+    description: 'A landing page for mobile app 03',
+    category: 'UI Design',
+    client: 'Dira, Inc',
+    technologies: ['Figma', 'Sketch'],
+  },
+  {
+    id: '4',
+    slug: 'the-desktop-app-landing-page-04',
+    title: 'The Desktop App Landing Page 04',
+    description: 'A landing page for desktop app 04',
+    category: 'Development',
+    client: 'Mars, Inc',
+    technologies: ['Next JS', 'Tailwind', 'CSS'],
+  },
 ];
 
 export const contacts: IContact[] = [
