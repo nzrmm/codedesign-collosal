@@ -1,0 +1,11 @@
+.glass-effect-secondary01 {
+  @apply -left-48 top-[60px] w-[785px] h-[770px] bg-secondary01 -z-10;
+}
+
+.glass-effect-primary03 {
+  @apply right-1/3 -top-[40px] w-[785px] h-[770px] bg-primary03 -z-20;
+}
+
+.glass-effect-secondary03 {
+  @apply right-6 -top-[140px] w-[785px] h-[770px] bg-secondary03 -z-10;
+}

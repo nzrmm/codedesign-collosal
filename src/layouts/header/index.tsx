@@ -1,6 +1,7 @@
 import cx from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
+import {useRouter} from 'next/navigation';
 
 import {
   Button,
@@ -9,6 +10,8 @@ import {
 import {links} from '@/data/layout';
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <div className={cx('px-52 py-10')}>
       <div className={cx('flex items-center justify-between')}>
@@ -41,7 +44,7 @@ const Header = () => {
           id='contact-button'
           type='secondary'
           variant='small'
-          onClick={() => {}}
+          onClick={() => router.push('/contact')}
         >
           Contact
         </Button>
