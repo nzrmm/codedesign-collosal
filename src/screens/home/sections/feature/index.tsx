@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import cx from 'classnames';
 import Image from 'next/image';
 
@@ -6,25 +5,9 @@ import {
   Typography,
 } from '@/components'
 
-const Feature = () => {
-  const [features] = useState([
-    {
-      icon: '/svgs/figma.svg',
-      title: 'Design',
-      description: 'The project interface will be designed first, our favorite tool is Figma.',
-    },
-    {
-      icon: '/svgs/code.svg',
-      title: 'Develop',
-      description: 'Transform design and write business logic here. Choose the technology you want.',
-    },
-    {
-      icon: '/svgs/box.svg',
-      title: 'Ship',
-      description: 'After the work is complete, we will send the project and all its assets to you.',
-    }
-  ])
-  
+import {features} from '@/data/home'
+
+const Feature = () => {  
   return (
     <div className={cx('px-52 mb-14')}>
       <div className={cx('grid grid-cols-3 gap-5')}>

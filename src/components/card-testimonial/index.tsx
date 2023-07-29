@@ -5,9 +5,11 @@ import {
   Typography
 } from '@/components';
 
+import {ITestimonial} from '@/types/home'
+
 type ICardTestimonial = {
   isActive?: boolean;
-  testimonial: any;
+  testimonial: ITestimonial;
 }
 
 const CardTestimonial = ({isActive, testimonial}: ICardTestimonial) => {

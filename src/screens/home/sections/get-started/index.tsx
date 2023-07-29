@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import cx from 'classnames';
 
 import {
@@ -6,31 +5,9 @@ import {
   Typography,
 } from '@/components';
 
-const GetStarted = () => {
-  const [services] = useState([
-    {
-      name: 'UI Design',
-      price: '1200$',
-      descriptions: ['10 design pages', 'Well-documented', '4 revisions', '$100/additional page'],
-      textColor: '!text-primary05',
-      backgroundColor: 'bg-primary05',
-    },
-    {
-      name: 'Development',
-      price: '5000$',
-      descriptions: ['Web & Mobile', 'Well-documented', '8 revisions', '$1000/additional feature'],
-      textColor: '!text-primary06',
-      backgroundColor: 'bg-primary06'
-    },
-    {
-      name: 'Maintenance',
-      price: '3000$',
-      descriptions: ['Daily backup', '3 hourse of maintenance', 'Including fixing', '$50/additional hour'],
-      textColor: '!text-primary07',
-      backgroundColor: 'bg-primary07'
-    },
-  ]);
+import {services} from '@/data/home';
 
+const GetStarted = () => {
   return (
     <div className={cx('px-16 mb-32')}>
       <div className={cx('bg-primary04 px-36 py-24 rounded-[30px]')}>

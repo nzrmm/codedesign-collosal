@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import cx from 'classnames';
 
 import {
@@ -6,14 +5,11 @@ import {
   Typography
 } from '@/components';
 
+import {projects} from '@/data/home';
+
 import styles from './projects.module.css';
 
 const Projects = () => {
-  const [projects] = useState([
-    {title: 'The Mobile App Landing Page', description: 'A landing page for mobile app'},
-    {title: 'The Desktop App Landing Page', description: 'A landing page for desktop app'},
-  ])
-
   return (
     <div className={cx('px-52 mb-28 relative')}>
       {/* Glassmorphism effect */}
