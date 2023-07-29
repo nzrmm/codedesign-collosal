@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import cx from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -7,14 +6,9 @@ import {
   Button,
 } from '@/components';
 
+import {links} from '@/data/layout';
+
 const Header = () => {
-  const [links] = useState([
-    {href: '/services', label: 'Services'},
-    {href: '/how-we-work', label: 'How We Work'},
-    {href: '/projects', label: 'Projects'},
-    {href: '/About', label: 'About'},
-  ])
-  
   return (
     <div className={cx('px-52 py-10')}>
       <div className={cx('flex items-center justify-between')}>

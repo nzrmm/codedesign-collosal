@@ -1,0 +1,7 @@
+.circle-glass-effect-gradient01 {
+  @apply left-20 top-52 w-[55px] h-[55px] bg-gradient-to-tl from-secondary05 to-secondary06 ;
+}
+
+.circle-glass-effect-gradient02 {
+  @apply right-20 -top-4 w-[46px] h-[46px] bg-gradient-to-tl from-secondary03 to-secondary04;
+}

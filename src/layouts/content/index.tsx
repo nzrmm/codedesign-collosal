@@ -1,6 +1,9 @@
 import cx from 'classnames';
 
-import {Header} from '@/layouts'
+import {
+  Header,
+  Footer,
+} from '@/layouts'
 
 type IContent = {
   children: React.ReactNode,
@@ -11,6 +14,7 @@ const Content = ({children}: IContent) => {
     <div className={cx('antialiased xl:w-[1440px] mx-auto')}>
       <Header />
       {children}
+      <Footer />
     </div>
   )
 }
