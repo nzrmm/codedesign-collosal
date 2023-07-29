@@ -1,4 +1,5 @@
 import cx from 'classnames';
+import {useRouter} from 'next/navigation';
 
 import {
   Button,
@@ -8,6 +9,8 @@ import {
 import styles from './hero.module.css';
 
 const Hero = () => {
+  const router = useRouter();
+
   return (
     <div className={cx('px-52 pt-20 mb-24 relative')}>
       {/* Glassmorphism effect */}
@@ -36,7 +39,7 @@ const Hero = () => {
             id='send-quote-button'
             type='primary'
             variant='medium'
-            onClick={() => {}}
+            onClick={() => router.push('/send-quote')}
           >
             Send Quote
           </Button>

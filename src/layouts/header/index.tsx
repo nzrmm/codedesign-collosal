@@ -13,15 +13,17 @@ const Header = () => {
     <div className={cx('px-52 py-10')}>
       <div className={cx('flex items-center justify-between')}>
         {/* Logo */}
-        <div className={cx('flex items-center gap-5')}>
-          <Image
-            width={23}
-            height={22}
-            src={'svgs/logo.svg'}
-            alt='logo'
-          />
-          <span className={cx('text-white font-bold text-2xl')}>Collosal.</span>
-        </div>
+        <Link href={'/'}>
+          <div className={cx('flex items-center gap-5')}>
+            <Image
+              width={23}
+              height={22}
+              src={'svgs/logo.svg'}
+              alt='logo'
+            />
+            <span className={cx('text-white font-bold text-2xl')}>Collosal.</span>
+          </div>
+        </Link>
 
         {/* Navlink */}
         <div className={cx('flex items-center gap-12')}>
