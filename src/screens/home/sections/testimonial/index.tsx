@@ -41,7 +41,7 @@ const Testimonial = () => {
               {({ isActive }) => (
                 <CardTestimonial 
                   isActive={isActive}
-                  testimonial={testimonial}
+                  data={testimonial}
                 />
               )}
             </SwiperSlide>

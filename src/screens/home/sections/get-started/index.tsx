@@ -1,8 +1,8 @@
 import cx from 'classnames';
 
 import {
-  Button,
   Typography,
+  CardService,
 } from '@/components';
 
 import {services} from '@/data/home';
@@ -25,41 +25,10 @@ const GetStarted = () => {
         <div className={cx('grid grid-cols-3 gap-5')}>
           {services.map((service, index) => {
             return (
-              <div key={index} className={cx('rounded-xl px-12 pt-14 pb-7', service.backgroundColor)}>
-                <div className={cx('flex items-start justify-between pb-9 border-b border-white/5 mb-9')}>
-                  <Typography variant='textBase' customClassName='!font-bold !text-white'>
-                    {service.name}
-                  </Typography>
-                  <div>
-                    <Typography variant='textXs'>
-                      Starting from
-                    </Typography>
-                    <Typography variant='text4Xl'>
-                      {service.price}
-                    </Typography>
-                  </div>
-                </div>
-
-                <div className={cx('flex flex-col gap-2 mb-12')}>
-                  {service.descriptions.map((item, index) => {
-                    return (
-                      <Typography key={index} variant='textBase' customClassName='!text-white text-center'>
-                        {item}
-                      </Typography>
-                    )
-                  })}
-                </div>
-
-                <Button
-                  id='learn-more-button'
-                  type='primary-white'
-                  variant='medium'
-                  customClassName={`w-full ${service.textColor}`}
-                  onClick={() => {}}
-                >
-                  Learn More
-                </Button>
-              </div>
+              <CardService
+                key={index}
+                data={service}
+              />
             )
           })}
         </div>

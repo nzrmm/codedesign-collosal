@@ -1,8 +1,8 @@
 import cx from 'classnames';
 
 import {
-  Button,
-  Typography
+  Typography,
+  CardProject,
 } from '@/components';
 
 import {projects} from '@/data/home';
@@ -32,30 +32,10 @@ const Projects = () => {
       <div className={cx('grid grid-cols-2 gap-5')}>
         {projects.map((project, index) => {
           return (
-            <div key={index}>
-              <div className={cx('w-full h-[440px] rounded-md border border-white/10 bg-[#161629] mb-10')}>
-              </div>
-  
-              <div className={cx('text-center')}>
-                <Typography variant='textXl' customClassName='mb-2'>
-                  {project.title}
-                </Typography>
-    
-                <Typography variant='textBase' customClassName='mb-9'>
-                  {project.description}
-                </Typography>
-    
-                <Button
-                  id='detail-button'
-                  type='outline'
-                  variant='small'
-                  customClassName='!rounded-full'
-                  onClick={() => {}}
-                >
-                  Detail
-                </Button>
-              </div>
-            </div>
+            <CardProject
+              key={index}
+              data={project}
+            />
           )
         })}
       </div>

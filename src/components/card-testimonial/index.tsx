@@ -9,20 +9,20 @@ import {ITestimonial} from '@/types/home'
 
 type ICardTestimonial = {
   isActive?: boolean;
-  testimonial: ITestimonial;
+  data: ITestimonial;
 }
 
-const CardTestimonial = ({isActive, testimonial}: ICardTestimonial) => {
+const CardTestimonial = ({isActive, data}: ICardTestimonial) => {
   return (
     <div className={cx('bg-white/5 flex flex-col items-center rounded-md px-12 py-16', {
       '-translate-y-11 transition-all duration-500': isActive,
     })}>
       <div className={cx('relative mb-5')}>
         <Image
-          src={testimonial.photo}
+          src={data.photo}
           width={90}
           height={90}
-          alt={testimonial.name}
+          alt={data.name}
         />
         <div className={cx(
           'absolute bottom-0 right-0 w-7 h-7',
@@ -39,16 +39,16 @@ const CardTestimonial = ({isActive, testimonial}: ICardTestimonial) => {
 
       <div className={cx('mb-8')}>
         <Typography variant='textLg' customClassName='mb-2'>
-          {testimonial.name}
+          {data.name}
         </Typography>
         <Typography variant='textSm'>
-          {testimonial.company}
+          {data.company}
         </Typography>
       </div>
 
       <div>
         <Typography variant='textBase' customClassName='text-center'>
-          {testimonial.description}
+          {data.description}
         </Typography>
       </div>
     </div>
