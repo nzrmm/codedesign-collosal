@@ -2,6 +2,6 @@
   @apply left-0 top-20 w-[434px] h-[430px] bg-secondary01 -z-20;
 }
 
-.glass-effect-secondary02 {
-  @apply left-60 -top-2 w-[355px] h-[350px] bg-secondary02 -z-10;
+.glass-effect-primary03 {
+  @apply left-60 -top-2 w-[355px] h-[350px] bg-primary03 -z-10;
 }

@@ -9,13 +9,19 @@ import {
 
 import {testimonials} from '@/data/home';
 
+import styles from './testimonial.module.css';
+
 // Import swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 const Testimonial = () => {
   return (
-    <div className={cx('px-16 mb-28')}>
+    <div className={cx('px-16 mb-28 relative')}>
+      {/* Glassmorphism effect */}
+      <div className={cx('glass-effect', styles['glass-effect-primary02'])}></div>
+      <div className={cx('glass-effect', styles['glass-effect-primary03'])}></div>
+
       <div className={cx('flex flex-col items-center')}>
         <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-1'>
           TESTIMONIAL

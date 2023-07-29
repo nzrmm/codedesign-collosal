@@ -13,7 +13,7 @@ const HowWeWork = () => {
       <div className={cx('flex items-center relative')}>
         {/* Glassmorphism effect */}
         <div className={cx('glass-effect', styles['glass-effect-secondary01'])}></div>
-        <div className={cx('glass-effect', styles['glass-effect-secondary02'])}></div>
+        <div className={cx('glass-effect', styles['glass-effect-primary03'])}></div>
 
         <div className={cx('w-[600px] h-[525px] relative')}>
           <Image

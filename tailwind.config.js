@@ -19,7 +19,7 @@ module.exports = {
         primary06: '#233679',
         primary07: '#792366',
         secondary01: '#FCA016',
-        secondary02: '#16FCD2',
+        // secondary02: '#16FCD2',
         secondary03: '#FC165B',
         secondary04: '#FF81A6',
         secondary05: '#009C3E',

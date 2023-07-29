@@ -12,7 +12,7 @@ const Hero = () => {
     <div className={cx('px-52 pt-20 mb-24 relative')}>
       {/* Glassmorphism effect */}
       <div className={cx('glass-effect', styles['glass-effect-secondary01'])}></div>
-      <div className={cx('glass-effect', styles['glass-effect-secondary02'])}></div>
+      <div className={cx('glass-effect', styles['glass-effect-primary03'])}></div>
       <div className={cx('glass-effect', styles['glass-effect-secondary03'])}></div>
 
       <div className={cx('flex flex-col items-center')}>
