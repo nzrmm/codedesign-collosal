@@ -1,30 +1,25 @@
 import {useState} from 'react';
 import cx from 'classnames';
+import Image from 'next/image';
 
 import {
   Typography,
 } from '@/components'
 
-import {
-  BoxIcon,
-  CodeIcon,
-  FigmaIcon,
-} from '@/assets/svgs'
-
 const Feature = () => {
   const [features] = useState([
     {
-      icon: <FigmaIcon />,
+      icon: '/svgs/figma.svg',
       title: 'Design',
       description: 'The project interface will be designed first, our favorite tool is Figma.',
     },
     {
-      icon: <CodeIcon />,
+      icon: '/svgs/code.svg',
       title: 'Develop',
       description: 'Transform design and write business logic here. Choose the technology you want.',
     },
     {
-      icon: <BoxIcon />,
+      icon: '/svgs/box.svg',
       title: 'Ship',
       description: 'After the work is complete, we will send the project and all its assets to you.',
     }
@@ -37,7 +32,12 @@ const Feature = () => {
           return (
             <div key={index} className={cx('bg-white/5 rounded-md px-10 py-8')}>
               <div className={cx('flex items-center justify-center w-14 h-14 bg-white/5 rounded-md mb-7')}>
-                {feature.icon}
+                <Image
+                  width={24}
+                  height={24}
+                  src={feature.icon}
+                  alt={feature.icon}
+                />
               </div>
     
               <div>

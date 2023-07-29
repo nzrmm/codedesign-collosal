@@ -1,9 +1,11 @@
 import {useState} from 'react';
 import cx from 'classnames';
 import Link from 'next/link';
+import Image from 'next/image';
 
-import {LogoIcon} from '@/assets/svgs';
-import {Button} from '@/components';
+import {
+  Button,
+} from '@/components';
 
 const Header = () => {
   const [links] = useState([
@@ -18,7 +20,12 @@ const Header = () => {
       <div className={cx('flex items-center justify-between')}>
         {/* Logo */}
         <div className={cx('flex items-center gap-5')}>
-          <LogoIcon />
+          <Image
+            width={23}
+            height={22}
+            src={'svgs/logo.svg'}
+            alt='logo'
+          />
           <span className={cx('text-white font-bold text-2xl')}>Collosal.</span>
         </div>
 
