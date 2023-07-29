@@ -33,8 +33,8 @@ export const companyLogos: ICompanyLogo[] = [
 ];
 
 export const projects: IProject[] = [
-  {title: 'The Mobile App Landing Page', description: 'A landing page for mobile app'},
-  {title: 'The Desktop App Landing Page', description: 'A landing page for desktop app'},
+  {id: '1', title: 'The Mobile App Landing Page', description: 'A landing page for mobile app'},
+  {id: '2', title: 'The Desktop App Landing Page', description: 'A landing page for desktop app'},
 ];
 
 export const services: IService[] = [

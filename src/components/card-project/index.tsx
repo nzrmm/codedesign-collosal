@@ -5,7 +5,7 @@ import {
   Typography
 } from '@/components';
 
-import {IProject} from '@/types/home';
+import {IProject} from '@/types/projects';
 
 type ICardProject = {
   data: IProject,
