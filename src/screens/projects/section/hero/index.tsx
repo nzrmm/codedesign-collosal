@@ -15,7 +15,7 @@ const Hero = () => {
       <div className={cx('glass-effect glass-effect-primary03')}></div>
       <div className={cx('glass-effect glass-effect-secondary03')}></div>
 
-      <div className={cx('flex justify-between items-center pb-24 border-b border-white/10 ')}>
+      <div className={cx('flex justify-between items-center pb-24 border-b border-white/10')}>
         <div className={cx('flex-1')}>
           <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-1'>
             PROJECTS

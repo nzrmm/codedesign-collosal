@@ -14,7 +14,7 @@ export const links: ILink[] = [
   {href: '/services', label: 'Services'},
   {href: '/how-we-work', label: 'How We Work'},
   {href: '/projects', label: 'Projects'},
-  {href: '/About', label: 'About'},
+  {href: '/about', label: 'About'},
 ]
 
 export const footer: IFooter = {
