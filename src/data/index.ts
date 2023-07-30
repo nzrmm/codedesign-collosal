@@ -6,6 +6,7 @@ import {
   IProject,
   IService,
   IContact,
+  IStatistic,
   ICompanyLogo,
   ITestimonial,
 } from '@/types';
@@ -40,7 +41,6 @@ export const footer: IFooter = {
     {label: 'Sitemap', href: '/'},
   ]
 }
-
 
 export const features: IFeature[] = [
   {
@@ -170,4 +170,25 @@ export const contacts: IContact[] = [
     type: 'Email',
     value: 'support@collosal.tld'
   }
-]
+];
+
+export const statistics: IStatistic[] = [
+  {
+    icon: '/svgs/flag.svg',
+    alt: 'flag-icon',
+    type: 'COUNTRIES',
+    value: 8,
+  },
+  {
+    icon: '/svgs/user.svg',
+    alt: 'user-icon',
+    type: 'CLIENTS',
+    value: 193,
+  },
+  {
+    icon: '/svgs/money.svg',
+    alt: 'money-icon',
+    type: 'EARNING',
+    value: '$100k',
+  },
+];

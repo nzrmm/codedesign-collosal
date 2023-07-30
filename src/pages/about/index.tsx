@@ -1,11 +1,13 @@
 import {
-  Hero
+  Hero,
+  Statistic,
 } from '@/screens/about'
 
 const About = () => {
   return (
     <div>
       <Hero />
+      <Statistic />
     </div>
   )
 }

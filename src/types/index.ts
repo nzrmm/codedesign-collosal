@@ -55,3 +55,10 @@ export type IContact = {
   type: string,
   value: string
 }
+
+export type IStatistic = {
+  icon: string,
+  alt: string,
+  type: string,
+  value: string | number,
+}
