@@ -62,3 +62,10 @@ export type IStatistic = {
   type: string,
   value: string | number,
 }
+
+export type ITeamPeople = {
+  images: string,
+  alt: string,
+  name: string,
+  jobPosition: string,
+}

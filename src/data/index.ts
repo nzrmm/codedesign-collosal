@@ -7,6 +7,7 @@ import {
   IService,
   IContact,
   IStatistic,
+  ITeamPeople,
   ICompanyLogo,
   ITestimonial,
 } from '@/types';
@@ -192,3 +193,42 @@ export const statistics: IStatistic[] = [
     value: '$100k',
   },
 ];
+
+export const teamPeoples: ITeamPeople[] = [
+  {
+    images: '/images/team-people-01.png',
+    alt: 'team-people-01-image',
+    name: 'Albert Flores',
+    jobPosition: 'Founder',
+  },
+  {
+    images: '/images/team-people-02.png',
+    alt: 'team-people-02-image',
+    name: 'Devon Lane',
+    jobPosition: 'Chief Technology Officer',
+  },
+  {
+    images: '/images/team-people-03.png',
+    alt: 'team-people-03-image',
+    name: 'Darrell Steward',
+    jobPosition: 'UI Designer',
+  },
+  {
+    images: '/images/team-people-04.png',
+    alt: 'team-people-04-image',
+    name: 'Marvin McKinney',
+    jobPosition: 'Software Engineer',
+  },
+  {
+    images: '/images/team-people-05.png',
+    alt: 'team-people-05-image',
+    name: 'Floyd Miles',
+    jobPosition: 'System Analyst',
+  },
+  {
+    images: '/images/team-people-06.png',
+    alt: 'team-people-06-image',
+    name: 'Annette Black',
+    jobPosition: 'Project Manager',
+  },
+]
