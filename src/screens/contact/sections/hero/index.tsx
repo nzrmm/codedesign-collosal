@@ -1,12 +1,7 @@
 import cx from 'classnames';
 import Image from 'next/image';
 
-import {
-  Button,
-  TextArea,
-  TextInput,
-  Typography,
-} from '@/components'
+import {Button, TextArea, TextInput, Typography} from '@/components';
 
 import {contacts} from '@/data';
 
@@ -20,7 +15,10 @@ const Hero = () => {
 
       <div className={cx('flex items-center justify-between')}>
         <div className={cx('flex-1')}>
-          <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-3'>
+          <Typography
+            variant='textBase'
+            customClassName='!font-semibold !text-primary03 tracking-widest mb-3'
+          >
             CONTACT
           </Typography>
 
@@ -29,12 +27,16 @@ const Hero = () => {
             from you, we are waiting <br />
             for it.
           </Typography>
-          
+
           <div className={cx('grid gap-8')}>
             {contacts.map((contact, index) => {
               return (
                 <div key={index} className={cx('flex items-center gap-7')}>
-                  <div className={cx('flex items-center justify-center w-[70px] h-[70px] rounded-md bg-white/5')}>
+                  <div
+                    className={cx(
+                      'flex items-center justify-center w-[70px] h-[70px] rounded-md bg-white/5',
+                    )}
+                  >
                     <Image
                       width={30}
                       height={30}
@@ -43,21 +45,19 @@ const Hero = () => {
                     />
                   </div>
                   <div>
-                    <Typography variant='textBase'>
-                      {contact.type}
-                    </Typography>
-                    <Typography variant='textXl'>
-                      {contact.value}
-                    </Typography>
+                    <Typography variant='textBase'>{contact.type}</Typography>
+                    <Typography variant='textXl'>{contact.value}</Typography>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
 
         <div className={'flex-1 flex justify-end'}>
-          <div className={cx('w-[412px] bg-white/5 px-9 pt-12 pb-9 rounded-md')}>
+          <div
+            className={cx('w-[412px] bg-white/5 px-9 pt-12 pb-9 rounded-md')}
+          >
             <div className={cx('flex items-center  gap-x-4 mb-7')}>
               <TextInput
                 id='name-input'
@@ -107,7 +107,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

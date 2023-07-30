@@ -1,10 +1,7 @@
 import cx from 'classnames';
 import {useRouter} from 'next/navigation';
 
-import {
-  Button,
-  Typography,
-} from '@/components';
+import {Button, Typography} from '@/components';
 
 const Hero = () => {
   const router = useRouter();
@@ -17,7 +14,10 @@ const Hero = () => {
       <div className={cx('glass-effect glass-effect-secondary03')}></div>
 
       <div className={cx('flex flex-col items-center')}>
-        <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-3'>
+        <Typography
+          variant='textBase'
+          customClassName='!font-semibold !text-primary03 tracking-widest mb-3'
+        >
           CLIENT-DEVELOPMENT DRIVEN
         </Typography>
 
@@ -27,8 +27,10 @@ const Hero = () => {
         </Typography>
 
         <Typography variant='textBase' customClassName='text-center mb-10'>
-          We are committed to not making clients wait. We will deliver the work <br />
-          as quickly as possible. Even on the same day. Even so, we do not <br />
+          We are committed to not making clients wait. We will deliver the work{' '}
+          <br />
+          as quickly as possible. Even on the same day. Even so, we do not{' '}
+          <br />
           reduce the quality of our work.
         </Typography>
 
@@ -52,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

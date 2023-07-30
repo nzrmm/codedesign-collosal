@@ -1,13 +1,10 @@
 import cx from 'classnames';
 
-import {
-  Header,
-  Footer,
-} from '@/layouts'
+import {Header, Footer} from '@/layouts';
 
 type IContent = {
-  children: React.ReactNode,
-}
+  children: React.ReactNode;
+};
 
 const Content = ({children}: IContent) => {
   return (
@@ -16,7 +13,7 @@ const Content = ({children}: IContent) => {
       {children}
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;

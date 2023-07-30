@@ -1,9 +1,6 @@
 import cx from 'classnames';
 
-import {
-  Button,
-  CardProject,
-} from '@/components';
+import {Button, CardProject} from '@/components';
 
 import {projects} from '@/data';
 
@@ -12,12 +9,7 @@ const Project = () => {
     <div className={cx('px-52 mb-16')}>
       <div className={cx('grid grid-cols-2 gap-x-5 gap-y-16 mb-24')}>
         {projects.map((project, index) => {
-          return (
-            <CardProject
-              key={project.id}
-              data={project}
-            />
-          )
+          return <CardProject key={project.id} data={project} />;
         })}
       </div>
 
@@ -32,7 +24,7 @@ const Project = () => {
         </Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

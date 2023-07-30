@@ -1,11 +1,8 @@
 import cx from 'classnames';
 
-import {
-  Selectbox,
-  Typography,
-} from '@/components';
+import {Selectbox, Typography} from '@/components';
 
-import {categories} from '@/data'
+import {categories} from '@/data';
 
 const Hero = () => {
   return (
@@ -15,19 +12,26 @@ const Hero = () => {
       <div className={cx('glass-effect glass-effect-primary03')}></div>
       <div className={cx('glass-effect glass-effect-secondary03')}></div>
 
-      <div className={cx('flex justify-between items-center pb-24 border-b border-white/10')}>
+      <div
+        className={cx(
+          'flex justify-between items-center pb-24 border-b border-white/10',
+        )}
+      >
         <div className={cx('flex-1')}>
-          <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-1'>
+          <Typography
+            variant='textBase'
+            customClassName='!font-semibold !text-primary03 tracking-widest mb-1'
+          >
             PROJECTS
           </Typography>
 
           <Typography variant='text4Xl'>
             We have completed many <br />
-            amazing projects that you  <br />
+            amazing projects that you <br />
             will not believe
           </Typography>
         </div>
-        
+
         <Selectbox
           options={categories}
           customClassName='w-[175px]'
@@ -36,7 +40,7 @@ const Hero = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,8 +1,4 @@
-import {
-  Hero,
-  Statistic,
-  OurTeam,
-} from '@/screens/about'
+import {Hero, Statistic, OurTeam} from '@/screens/about';
 
 const About = () => {
   return (
@@ -11,7 +7,7 @@ const About = () => {
       <Statistic />
       <OurTeam />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,8 +1,6 @@
 import cx from 'classnames';
 
-import {
-  Typography,
-} from '@/components';
+import {Typography} from '@/components';
 
 import {IProject} from '@/types';
 
@@ -14,8 +12,15 @@ const Project = ({data}: {data: IProject}) => {
       <div className={cx('glass-effect glass-effect-primary03')}></div>
       <div className={cx('glass-effect glass-effect-secondary03')}></div>
 
-      <div className={cx('flex flex-col items-center pb-20 border-b border-white/10 mb-16')}>
-        <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-3'>
+      <div
+        className={cx(
+          'flex flex-col items-center pb-20 border-b border-white/10 mb-16',
+        )}
+      >
+        <Typography
+          variant='textBase'
+          customClassName='!font-semibold !text-primary03 tracking-widest mb-3'
+        >
           PROJECT DETAIL
         </Typography>
 
@@ -24,10 +29,17 @@ const Project = ({data}: {data: IProject}) => {
         </Typography>
       </div>
 
-      <div className={cx('flex items-center gap-10 pb-32 border-b border-white/10 mb-32')}>
+      <div
+        className={cx(
+          'flex items-center gap-10 pb-32 border-b border-white/10 mb-32',
+        )}
+      >
         <div className={cx('flex-1')}>
-          <div className={cx('w-full h-[440px] rounded-md border border-white/10 bg-[#161629]')}>
-          </div>
+          <div
+            className={cx(
+              'w-full h-[440px] rounded-md border border-white/10 bg-[#161629]',
+            )}
+          ></div>
         </div>
 
         <div className={cx('flex-1')}>
@@ -67,7 +79,7 @@ const Project = ({data}: {data: IProject}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

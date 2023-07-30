@@ -3,15 +3,22 @@ import cx from 'classnames';
 import styles from './button.module.css';
 
 type IButton = {
-  id: string,
-  children: React.ReactNode,
-  type: 'primary' | 'primary-white' | 'secondary' | 'outline',
-  variant: 'small' | 'medium' | 'large',
-  customClassName?: string,
-  onClick: () => void,
-}
+  id: string;
+  children: React.ReactNode;
+  type: 'primary' | 'primary-white' | 'secondary' | 'outline';
+  variant: 'small' | 'medium' | 'large';
+  customClassName?: string;
+  onClick: () => void;
+};
 
-const Button = ({id, children, type, variant, customClassName, ...props}: IButton) => {
+const Button = ({
+  id,
+  children,
+  type,
+  variant,
+  customClassName,
+  ...props
+}: IButton) => {
   return (
     <div>
       <button
@@ -19,14 +26,14 @@ const Button = ({id, children, type, variant, customClassName, ...props}: IButto
         className={cx(
           styles[`type__${type}`],
           styles[`variant__${variant}`],
-          customClassName
+          customClassName,
         )}
         onClick={props.onClick}
       >
         {children}
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

@@ -1,11 +1,6 @@
 import cx from 'classnames';
 
-import {
-  Button,
-  TextArea,
-  TextInput,
-  Typography,
-} from '@/components'
+import {Button, TextArea, TextInput, Typography} from '@/components';
 
 const Hero = () => {
   return (
@@ -17,7 +12,10 @@ const Hero = () => {
 
       <div className={cx('flex items-center justify-between')}>
         <div className={cx('flex-1')}>
-          <Typography variant='textBase' customClassName='!font-semibold !text-primary03 tracking-widest mb-3'>
+          <Typography
+            variant='textBase'
+            customClassName='!font-semibold !text-primary03 tracking-widest mb-3'
+          >
             SEND QUOTE
           </Typography>
 
@@ -25,10 +23,12 @@ const Hero = () => {
             Tell us about your problem <br />
             and how we can help <br />
           </Typography>
-          
+
           <Typography variant='textBase' customClassName='mb-12'>
-            We are happy to help you, tell us what is the problem with your <br />
-            company, and we are ready to answer these problems. It usually <br />
+            We are happy to help you, tell us what is the problem with your{' '}
+            <br />
+            company, and we are ready to answer these problems. It usually{' '}
+            <br />
             takes a few minutes for us to respond.
           </Typography>
 
@@ -43,7 +43,9 @@ const Hero = () => {
         </div>
 
         <div className={'flex-1 flex justify-end'}>
-          <div className={cx('w-[412px] bg-white/5 px-9 pt-12 pb-9 rounded-md')}>
+          <div
+            className={cx('w-[412px] bg-white/5 px-9 pt-12 pb-9 rounded-md')}
+          >
             <div className={cx('grid grid-cols-2 gap-x-4 gap-y-7 mb-7')}>
               <TextInput
                 id='name-input'
@@ -98,7 +100,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

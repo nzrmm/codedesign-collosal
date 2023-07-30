@@ -1,5 +1,3 @@
-import Hero from "@/screens/contact/sections/hero";
+import Hero from '@/screens/contact/sections/hero';
 
-export {
-  Hero,
-}
+export {Hero};

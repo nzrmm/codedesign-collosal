@@ -6,8 +6,8 @@ import {
   OurTeam,
   Projects,
   GetStarted,
-  Testimonial
-} from "@/screens/home"
+  Testimonial,
+} from '@/screens/home';
 
 const Home = () => {
   return (
@@ -21,7 +21,7 @@ const Home = () => {
       <GetStarted />
       <Testimonial />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

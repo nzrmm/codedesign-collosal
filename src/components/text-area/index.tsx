@@ -1,31 +1,34 @@
 import cx from 'classnames';
 
-import {
-  Typography,
-} from '@/components';
+import {Typography} from '@/components';
 
 type ITextArea = {
   id: string;
-  name: string
-  rows: number,
-  cols: number,
+  name: string;
+  rows: number;
+  cols: number;
   value: string;
-  label?: string,
+  label?: string;
   disabled?: boolean;
   placeholder: string;
-  customClassName?: string,
-  wrapperClassName?: string,
+  customClassName?: string;
+  wrapperClassName?: string;
   onChange: (event: any) => void;
 };
 
-const TextArea = ({id, name, value, disabled, onChange, ...props}: ITextArea) => {
+const TextArea = ({
+  id,
+  name,
+  value,
+  disabled,
+  onChange,
+  ...props
+}: ITextArea) => {
   return (
     <div className={cx('w-full', props.wrapperClassName)}>
       {props.label && (
         <label htmlFor={id}>
-          <Typography variant='textSm'>
-            {props.label}
-          </Typography>
+          <Typography variant='textSm'>{props.label}</Typography>
         </label>
       )}
 
@@ -41,9 +44,10 @@ const TextArea = ({id, name, value, disabled, onChange, ...props}: ITextArea) =>
         disabled={disabled}
         className={cx(
           'w-full rounded-md focus:outline-none bg-transparent border border-white/10 px-4 py-3',
-          props.customClassName, {
-            'mt-2': props.label
-          }
+          props.customClassName,
+          {
+            'mt-2': props.label,
+          },
         )}
       />
     </div>

@@ -2,9 +2,7 @@
 const {fontFamily} = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
       sans: ['Noto Sans', ...fontFamily.sans],
@@ -29,4 +27,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

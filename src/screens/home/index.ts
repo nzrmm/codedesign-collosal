@@ -16,4 +16,4 @@ export {
   Projects,
   GetStarted,
   Testimonial,
-}
+};

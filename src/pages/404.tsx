@@ -1,10 +1,7 @@
 import cx from 'classnames';
 import {useRouter} from 'next/navigation';
 
-import {
-  Button,
-  Typography,
-} from '@/components';
+import {Button, Typography} from '@/components';
 
 const NotFound = () => {
   const router = useRouter();
@@ -15,9 +12,12 @@ const NotFound = () => {
       <div className={cx('glass-effect glass-effect-secondary01')}></div>
       <div className={cx('glass-effect glass-effect-primary03')}></div>
       <div className={cx('glass-effect glass-effect-secondary03')}></div>
-      
+
       <div className={cx('flex flex-col items-center')}>
-        <Typography variant='textBase' customClassName='!font-semibold !text-secondary03 tracking-widest mb-3'>
+        <Typography
+          variant='textBase'
+          customClassName='!font-semibold !text-secondary03 tracking-widest mb-3'
+        >
           ERROR
         </Typography>
 
@@ -42,7 +42,7 @@ const NotFound = () => {
         </Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

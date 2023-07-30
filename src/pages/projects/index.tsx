@@ -1,7 +1,4 @@
-import {
-  Hero,
-  Project,
-} from '@/screens/projects';
+import {Hero, Project} from '@/screens/projects';
 
 const Projects = () => {
   return (
@@ -9,7 +6,7 @@ const Projects = () => {
       <Hero />
       <Project />
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

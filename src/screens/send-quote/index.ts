@@ -1,5 +1,3 @@
-import Hero from "@/screens/send-quote/sections/hero";
+import Hero from '@/screens/send-quote/sections/hero';
 
-export {
-  Hero,
-}
+export {Hero};
