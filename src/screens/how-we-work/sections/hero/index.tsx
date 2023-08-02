@@ -4,7 +4,7 @@ import {Typography} from '@/components';
 
 const Hero = () => {
   return (
-    <div className={cx('px-52 pt-20 relative')}>
+    <div className={cx('px-52 pt-20 mb-32 relative')}>
       {/* Glassmorphism effect */}
       <div className={cx('glass-effect glass-effect-secondary01')}></div>
       <div className={cx('glass-effect glass-effect-primary03')}></div>
