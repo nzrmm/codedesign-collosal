@@ -1,7 +1,6 @@
 import cx from 'classnames';
-import Image from 'next/image';
 
-import {Typography} from '@/components';
+import {Typography, CardTeamPeople} from '@/components';
 
 import {teamPeoples} from '@/data';
 
@@ -46,25 +45,7 @@ const OurTeam = () => {
 
       <div className={cx('grid grid-cols-3 gap-x-5 gap-y-7')}>
         {teamPeoples.map((teamPeople, index) => {
-          return (
-            <div
-              key={index}
-              className={cx('rounded-md bg-white/5 overflow-hidden')}
-            >
-              <div className={cx('relative w-full h-[356px]')}>
-                <Image fill src={teamPeople.images} alt={teamPeople.alt} />
-              </div>
-
-              <div className={cx('px-10 py-9')}>
-                <Typography variant='textLg' customClassName='mb-2'>
-                  {teamPeople.name}
-                </Typography>
-                <Typography variant='textSm' customClassName='!font-medium'>
-                  {teamPeople.jobPosition}
-                </Typography>
-              </div>
-            </div>
-          );
+          return <CardTeamPeople key={index} data={teamPeople} />;
         })}
       </div>
     </div>

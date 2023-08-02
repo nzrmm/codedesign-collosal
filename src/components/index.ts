@@ -6,6 +6,7 @@ import Typography from '@/components/typography';
 import CardProject from '@/components/card-project';
 import CardService from '@/components/card-service';
 import CardFeature from '@/components/card-feature';
+import CardTeamPeople from '@/components/card-team-people';
 import CardTestimonial from '@/components/card-testimonial';
 
 export {
@@ -17,5 +18,6 @@ export {
   CardProject,
   CardService,
   CardFeature,
+  CardTeamPeople,
   CardTestimonial,
 };
