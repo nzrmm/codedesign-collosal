@@ -1,4 +1,4 @@
-import {Hero, Step01, Step02} from '@/screens/how-we-work';
+import {Hero, Step01, Step02, Step03} from '@/screens/how-we-work';
 
 const HowWeWork = () => {
   return (
@@ -6,6 +6,7 @@ const HowWeWork = () => {
       <Hero />
       <Step01 />
       <Step02 />
+      <Step03 />
     </div>
   );
 };
