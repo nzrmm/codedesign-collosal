@@ -12,7 +12,7 @@ const Step01 = () => {
             width={410}
             height={410}
             src={'/images/step-01.png'}
-            alt='how-we-work'
+            alt='step-01-image'
           />
         </div>
 
