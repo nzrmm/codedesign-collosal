@@ -12,6 +12,7 @@ import {
   ITestimonial,
   IUIDesignService,
   IDevelopmentService,
+  IMaintenanceService,
 } from '@/types';
 
 export const links: ILink[] = [
@@ -271,17 +272,40 @@ export const uiDesignServices: IUIDesignService[] = [
 export const developmentServices: IDevelopmentService[] = [
   {
     title: 'Mobile App Development',
-    icon: '/svgs/layout.svg',
+    icon: '/svgs/mobile.svg',
     alt: 'mobile-icon',
   },
   {
     title: 'Desktop App Development',
-    icon: '/svgs/pointer.svg',
+    icon: '/svgs/desktop.svg',
     alt: 'desktop-icon',
   },
   {
     title: 'Web Development',
-    icon: '/svgs/pointer.svg',
+    icon: '/svgs/web.svg',
     alt: 'web-icon',
+  },
+];
+
+export const maintenanceServices: IMaintenanceService[] = [
+  {
+    title: 'Back up every day',
+    icon: '/svgs/download.svg',
+    alt: 'download-icon',
+  },
+  {
+    title: 'Upgrade',
+    icon: '/svgs/arrow-up.svg',
+    alt: 'arrow-up-icon',
+  },
+  {
+    title: 'Cleaning every week',
+    icon: '/svgs/refresh.svg',
+    alt: 'refresh-icon',
+  },
+  {
+    title: 'Fixing error',
+    icon: '/svgs/check-circle.svg',
+    alt: 'check-circle-icon',
   },
 ];

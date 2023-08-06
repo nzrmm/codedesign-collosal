@@ -1,4 +1,4 @@
-import {Hero, UIDesign, Development} from '@/screens/services';
+import {Hero, UIDesign, Development, Maintenance} from '@/screens/services';
 
 const Services = () => {
   return (
@@ -6,6 +6,7 @@ const Services = () => {
       <Hero />
       <UIDesign />
       <Development />
+      <Maintenance />
     </div>
   );
 };

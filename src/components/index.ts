@@ -10,6 +10,7 @@ import CardTeamPeople from '@/components/card-team-people';
 import CardTestimonial from '@/components/card-testimonial';
 import CardUIDesignService from '@/components/card-ui-design-service';
 import CardDevelopmentService from '@/components/card-development-service';
+import CardMaintenanceService from '@/components/card-maintenance-service';
 
 export {
   Button,
@@ -24,4 +25,5 @@ export {
   CardTestimonial,
   CardUIDesignService,
   CardDevelopmentService,
+  CardMaintenanceService,
 };

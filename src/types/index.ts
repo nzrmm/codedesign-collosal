@@ -82,3 +82,9 @@ export type IDevelopmentService = {
   icon: string;
   alt: string;
 };
+
+export type IMaintenanceService = {
+  title: string;
+  icon: string;
+  alt: string;
+};
