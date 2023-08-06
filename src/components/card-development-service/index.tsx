@@ -9,10 +9,10 @@ type ICardDevelopmentService = {
   data: IDevelopmentService;
 };
 
-const CardDevelopment = ({data}: ICardDevelopmentService) => {
+const CardDevelopmentService = ({data}: ICardDevelopmentService) => {
   return (
     <div
-      className={cx(' bg-white/5 rounded-md border border-white/10 px-6 py-4')}
+      className={cx('bg-white/5 rounded-md border border-white/10 px-6 py-4')}
     >
       <div className={cx('flex gap-5')}>
         <Image width={30} height={30} src={data.icon} alt={data.alt} />
@@ -27,4 +27,4 @@ const CardDevelopment = ({data}: ICardDevelopmentService) => {
   );
 };
 
-export default CardDevelopment;
+export default CardDevelopmentService;
