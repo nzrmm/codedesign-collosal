@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import {useRouter} from 'next/navigation';
+import {useRouter} from 'next/router';
 
 import {Button, Typography} from '@/components';
 

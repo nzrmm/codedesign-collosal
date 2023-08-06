@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
-import {useRouter} from 'next/navigation';
+import {useRouter} from 'next/router';
 
 import {Button} from '@/components';
 
@@ -30,7 +30,9 @@ const Header = () => {
               <Link
                 key={index}
                 href={link.href}
-                className={cx('text-white/80')}
+                className={cx('text-white/80', {
+                  'font-bold !text-white': router.asPath === link.href,
+                })}
               >
                 {link.label}
               </Link>

@@ -1,6 +1,7 @@
 import cx from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
+import {useRouter} from 'next/router';
 
 import {Button, Typography} from '@/components';
 
@@ -9,6 +10,8 @@ import {footer} from '@/data';
 import styles from './footer.module.css';
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <div className={cx('px-52 mb-16 relative')}>
       {/* Glassmorphism effect */}
@@ -40,7 +43,7 @@ const Footer = () => {
             id='send-quote-button'
             type='primary'
             variant='medium'
-            onClick={() => {}}
+            onClick={() => router.push('/send-quote')}
           >
             Send Quote
           </Button>
