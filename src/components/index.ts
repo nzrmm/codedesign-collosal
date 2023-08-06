@@ -8,6 +8,7 @@ import CardService from '@/components/card-service';
 import CardFeature from '@/components/card-feature';
 import CardTeamPeople from '@/components/card-team-people';
 import CardTestimonial from '@/components/card-testimonial';
+import CardUIDesignService from '@/components/card-ui-design-service';
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   CardFeature,
   CardTeamPeople,
   CardTestimonial,
+  CardUIDesignService,
 };

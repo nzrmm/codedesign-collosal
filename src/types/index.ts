@@ -69,3 +69,10 @@ export type ITeamPeople = {
   name: string;
   jobPosition: string;
 };
+
+export type IUIDesignService = {
+  title: string;
+  description: string;
+  icon: string;
+  alt: string;
+};

@@ -10,6 +10,7 @@ import {
   ITeamPeople,
   ICompanyLogo,
   ITestimonial,
+  IUIDesignService,
 } from '@/types';
 
 export const links: ILink[] = [
@@ -248,5 +249,20 @@ export const teamPeoples: ITeamPeople[] = [
     alt: 'team-people-06-image',
     name: 'Annette Black',
     jobPosition: 'Project Manager',
+  },
+];
+
+export const uiDesignServices: IUIDesignService[] = [
+  {
+    title: 'Beautiful Design',
+    description: 'Create a modern design for your idea.',
+    icon: '/svgs/layout.svg',
+    alt: 'layout-icon',
+  },
+  {
+    title: 'Card Name',
+    description: 'Create vivid prototypes for your designs.',
+    icon: '/svgs/pointer.svg',
+    alt: 'pointer-icon',
   },
 ];

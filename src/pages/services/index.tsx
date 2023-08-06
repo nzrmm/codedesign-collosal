@@ -1,9 +1,10 @@
-import {Hero} from '@/screens/services';
+import {Hero, UIDesign} from '@/screens/services';
 
 const Services = () => {
   return (
     <div>
       <Hero />
+      <UIDesign />
     </div>
   );
 };
