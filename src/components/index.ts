@@ -9,6 +9,7 @@ import CardFeature from '@/components/card-feature';
 import CardTeamPeople from '@/components/card-team-people';
 import CardTestimonial from '@/components/card-testimonial';
 import CardUIDesignService from '@/components/card-ui-design-service';
+import CardDevelopmentService from '@/components/card-development-service';
 
 export {
   Button,
@@ -22,4 +23,5 @@ export {
   CardTeamPeople,
   CardTestimonial,
   CardUIDesignService,
+  CardDevelopmentService,
 };

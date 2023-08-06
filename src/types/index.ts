@@ -76,3 +76,9 @@ export type IUIDesignService = {
   icon: string;
   alt: string;
 };
+
+export type IDevelopmentService = {
+  title: string;
+  icon: string;
+  alt: string;
+};

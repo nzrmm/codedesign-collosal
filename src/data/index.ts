@@ -11,6 +11,7 @@ import {
   ICompanyLogo,
   ITestimonial,
   IUIDesignService,
+  IDevelopmentService,
 } from '@/types';
 
 export const links: ILink[] = [
@@ -264,5 +265,23 @@ export const uiDesignServices: IUIDesignService[] = [
     description: 'Create vivid prototypes for your designs.',
     icon: '/svgs/pointer.svg',
     alt: 'pointer-icon',
+  },
+];
+
+export const developmentServices: IDevelopmentService[] = [
+  {
+    title: 'Mobile App Development',
+    icon: '/svgs/layout.svg',
+    alt: 'mobile-icon',
+  },
+  {
+    title: 'Desktop App Development',
+    icon: '/svgs/pointer.svg',
+    alt: 'desktop-icon',
+  },
+  {
+    title: 'Web Development',
+    icon: '/svgs/pointer.svg',
+    alt: 'web-icon',
   },
 ];
